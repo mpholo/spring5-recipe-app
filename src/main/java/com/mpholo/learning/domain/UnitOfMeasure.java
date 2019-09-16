@@ -1,28 +1,22 @@
 package com.mpholo.learning.domain;
 
-import javax.persistence.*;
+import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Data
 @Entity
 public class UnitOfMeasure {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String desciption;
+    private String description;
 
-    public Long getId() {
-        return id;
+    public UnitOfMeasure() {
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getDesciption() {
-        return desciption;
-    }
-
-    public void setDesciption(String desciption) {
-        this.desciption = desciption;
-    }
 }
