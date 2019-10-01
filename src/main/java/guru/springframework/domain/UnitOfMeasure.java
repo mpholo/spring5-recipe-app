@@ -1,7 +1,5 @@
 package guru.springframework.domain;
 
-import sun.rmi.runtime.Log;
-
 import javax.persistence.*;
 
 @Entity
